@@ -1,6 +1,12 @@
-import (
-  builtins.fetchTarball {
-    url = "https://github.com/nixos/nixpkgs/archive/8c7a5613f3bc14f3584d3db6bed342c6804203ef.tar.gz";
-    sha256 = "0g59qpx413kdfqh4wz9pcllhqaiva0r820gl229ax1bpw3bna6b9";
-  }
-)
+{ pkgs ? import <nixpkgs> { } }:
+
+import
+  (
+    pkgs.fetchFromGitHub {
+      owner = "nixos";
+      repo = "nixpkgs";
+      rev = "a0b10452c6a06c493701391035adea999e90786b";
+      sha256 = "10mc924z59wghiykcqar5shq54l794msbpashwwnwsydnzha6max";
+    }
+  )
+{ }

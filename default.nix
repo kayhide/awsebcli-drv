@@ -1,5 +1,5 @@
-{ pkgs ? import ./pinned.nix { }
-, poetry2nix ? import ./poetry2nix.nix { }
+{ pkgs ? import ./pinned.nix {}
+, poetry2nix ? import ./poetry2nix.nix {}
 }:
 
 let
