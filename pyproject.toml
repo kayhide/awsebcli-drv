@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "awsebcli-env"
+name = "trivial"
 version = "0.1.0"
 description = ""
-authors = [""]
+authors = []
 
 [tool.poetry.dependencies]
 python = "^3.7"
-awsebcli = "^3.19.3"
+awsebcli = { git = "git@github.com:justinwoo/aws-elastic-beanstalk-cli.git", branch = "fix-versions" }
 
 [tool.poetry.dev-dependencies]
 
