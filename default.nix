@@ -3,8 +3,8 @@
 }:
 
 let
-  app = poetry2nix.mkPoetryApplication {
+  env = poetry2nix.mkPoetryEnv {
     projectDir = ./.;
   };
 in
-app.dependencyEnv
+env
