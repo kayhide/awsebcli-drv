@@ -6,7 +6,7 @@ authors = []
 
 [tool.poetry.dependencies]
 python = "^3.7"
-awsebcli = { git = "git@github.com:justinwoo/aws-elastic-beanstalk-cli.git", branch = "fix-versions" }
+gigalixir = "^1.2.3"
 
 [tool.poetry.dev-dependencies]
 
